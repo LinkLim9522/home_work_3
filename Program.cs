@@ -1,15 +1,10 @@
-﻿int num,r,sum=0,t;
-Console.Write("Введите пятизначное число");
-num = Convert.ToInt32(Console.ReadLine());
-if(num>9999 && num<100000)
-{
-for(t=num;num!=0;num=num/10)
-{
-r=num % 10;
-sum=sum*10+r;
+﻿int number = ReadInt("Введите число N: ");
+for (int i = 1; i <= number; i++)
+{ 
+    Console.Write($"{i*i*i} ");
 }
-if(t==sum)
-Console.Write($"{t} является палиндромом");
-else
-Console.Write($"{t} не является палиндромом");
-} 
+int ReadInt(string message)
+{
+    Console.Write(message);
+    return Convert.ToInt32(Console.ReadLine());
+}
