@@ -12,5 +12,4 @@ if(t==sum)
 Console.Write($"{t} является палиндромом");
 else
 Console.Write($"{t} не является палиндромом");
-} else
-Console.Write("Введите пятизначное число!");
+} 
